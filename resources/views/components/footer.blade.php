@@ -5,7 +5,7 @@
        <div class="mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
         <!-- MENU -->
         <div>
-          <h3 class="text-sm font-semibold mb-4 uppercase">Menu</h3>
+          <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Menu</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="/blog" class="hover:text-link-100">Blog</a></li>
             <li><a href="/tienda" class="hover:text-link-100">Tienda</a></li>
@@ -15,7 +15,7 @@
     
         <!-- SOPORTE -->
         <div>
-          <h3 class="text-sm font-semibold mb-4 uppercase">Soporte</h3>
+          <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Soporte</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="/contacto" class="hover:text-link-100">Contacto</a></li>
             <li><a href="/envios" class="hover:text-link-100">Envíos</a></li>
@@ -25,7 +25,7 @@
     
         <!-- EMPRESA -->
         <div>
-          <h3 class="text-sm font-semibold mb-4 uppercase">Empresa</h3>
+          <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Empresa</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="/quienes-somos" class="hover:text-link-100">Quiénes Somos</a></li>
             <li><a href="/recursos" class="hover:text-link-100">Recursos</a></li>
@@ -35,7 +35,7 @@
     
         <!-- LEGAL -->
         <div>
-          <h3 class="text-sm font-semibold mb-4 uppercase">Legal</h3>
+          <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Legal</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="/facturacion" class="hover:text-link-100">Facturación</a></li>
             <li><a href="/aviso-de-privacidad" class="hover:text-link-100">Aviso de Privacidad</a></li>
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="mt-8 xl:mt-0">
-        <h3 class="text-sm font-bold text-link-100 tracking-wider uppercase">
+        <h3 class="text-sm font-bold text-link-100 tracking-wider uppercase text-link-100">
           Suscríbete a Nuestro Boletín
         </h3>
         <p class="mt-4 text-sm dark:text-gray-300">

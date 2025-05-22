@@ -4,8 +4,9 @@
       @click="showMenu = false"
     >
       <a
-        href="/"
+        href="{{ route('home') }}"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
         <i class="fa-solid fa-house"></i>
       Inicio
@@ -19,6 +20,7 @@
       <a
         href="/blog"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
         <i class="fa-solid fa-book"></i>
       Blog
@@ -32,6 +34,7 @@
       <a
         href="/tienda"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
       <i class="fa-solid fa-cart-shopping"></i>
       Tienda
@@ -45,6 +48,7 @@
       <a
         href="/cursos"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
         <i class="fa-solid fa-video"></i>
       Cursos
@@ -65,6 +69,7 @@
       <a
         href="/diseño-grafico"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
         <i class="fa-solid fa-pen"></i>
       Diseño Gráfico
@@ -78,6 +83,7 @@
       <a
         href="/fotografia"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
         <i class="fa-solid fa-camera"></i>
       Fotografía
@@ -91,6 +97,7 @@
       <a
         href="/diseño-y-desarrollo-web"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
       <i class="fa-solid fa-laptop-code"></i>
       Diseño y Desarrollo web
@@ -104,6 +111,7 @@
       <a
         href="/impresion"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
       <i class="fa-solid fa-print"></i>
       Impresión
@@ -117,6 +125,7 @@
       <a
         href="/asesorias"
         class="flex items-center gap-3 p-3 text-lg"
+        wire:navigate
       >
       <i class="fa-solid fa-chalkboard-user"></i>
       Asesorias
@@ -137,6 +146,7 @@
     <a
       href="/quienes-somos"
       class="flex items-center gap-3 p-3 text-lg"
+      wire:navigate
     >
       <i class="fa-solid fa-circle-info"></i>
     Quienes somos
@@ -150,6 +160,7 @@
     <a
       href="/contacto"
       class="flex items-center gap-3 p-3 text-lg"
+      wire:navigate
     >
     <i class="fa-solid fa-envelopes-bulk"></i>
    Contacto
@@ -163,6 +174,7 @@
     <a
       href="/recursos"
       class="flex items-center gap-3 p-3 text-lg"
+      wire:navigate
     >
     <i class="fa-solid fa-download"></i>
     Recursos
@@ -176,6 +188,7 @@
     <a
       href="/glosario"
       class="flex items-center gap-3 p-3 text-lg"
+      wire:navigate
     >
     <i class="fa-brands fa-glide-g"></i>
     Glosario Gráfico
@@ -188,6 +201,7 @@
     <a
       href="/responsabilidad-social"
       class="flex items-center gap-3 p-3 text-lg"
+      wire:navigate
     >
     <i class="fa-solid fa-newspaper"></i>
     Responsabilidad Social
@@ -200,6 +214,7 @@
     <a
       href="/politica-ambiental"
       class="flex items-center gap-3 p-3 text-lg"
+      wire:navigate
     >
     <i class="fa-solid fa-earth-americas"></i>
     Politica Ambiental

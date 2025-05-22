@@ -2,6 +2,13 @@
 
 @section('contenido')
 <div class="">
-    <h2>Hola mundo</h2>
+   @auth
+    <div class="flex justify-center">
+        <h1 class="text-4xl font-bold">Bienvenido {{ auth()->user()->nombre_completo }}</h1>
+    </div>
+    @guest
+        
+    @endguest
+   @endauth
 </div>
 @endsection

@@ -18,9 +18,15 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'nombre_completo',
+        'username',
         'email',
         'password',
+        'email_verified_at',
+        'verification_id',
+        'verification_code',
+        'verification_code_expires_at',
+        'is_verified',
     ];
 
     /**
@@ -45,4 +51,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function getRouteKeyName()
+{
+    return 'verification_id';
+}
 }

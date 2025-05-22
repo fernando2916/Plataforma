@@ -46,7 +46,7 @@
             <div class="dark:bg-nav-800 flex h-36 items-center gap-3 bg-white p-5 py-3">
                 @auth
                     <div>
-                        <span class="text-2xl">{{ Auth::user()->name }}</span>
+                        <span class="text-2xl">{{ Auth::user()->nombre_completo }}</span>
                         <div class="flex items-center gap-1">
                             <a href="/" class="flex items-center gap-1" @click="showMenu = false">
                                 <span class="text-link-400 text-base">Mi Perfil</span>
@@ -56,21 +56,23 @@
                             </a>
                         </div>
                     </div>
-                @else
+                    @else
+                        
                     <div class="p-5">
-                        <div class="flex items-center justify-center gap-3 pb-3">
-                          <i class="fa-solid fa-user"></i>
-                            <div>
-                                <span class="text-lg font-semibold">Entra a tu cuenta</span>
-                                <p class="text-justify text-xs text-slate-500">Podrás comprar, comentar o aprender.</p>
+                            <div class="flex items-center justify-center gap-3 pb-3">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    <span class="text-lg font-semibold">Entra a tu cuenta</span>
+                                    <p class="text-justify text-xs text-slate-500">Podrás comprar, comentar o aprender.</p>
+                                </div>
                             </div>
+                            <a href="{{ route('login') }}" wire:navigate @click="showMenu = false">
+                                <button class="bg-btn-200 hover:bg-btn-400 dark:bg-btn-400 dark:hover:bg-btn-600 w-full rounded-lg p-2 text-white cursor-pointer">
+                                    Ingresar
+                                </button>
+                            </a>
                         </div>
-                        <a href="/" @click="showMenu = false">
-                            <button class="bg-btn-200 hover:bg-btn-400 dark:bg-btn-400 dark:hover:bg-btn-600 w-full rounded-lg p-2 text-white">
-                                Ingresar
-                            </button>
-                        </a>
-                    </div>
+                        
                 @endauth
             </div>
 
@@ -78,6 +80,7 @@
                 @auth
                     <x-menu-dash/>
                 @else
+                    
                     <x-menu-side/>
                 @endauth
             </div>

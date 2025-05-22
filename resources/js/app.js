@@ -1,4 +1,8 @@
 import './bootstrap';
+import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
+
 import 'preline'
 
 function sidebar() {
