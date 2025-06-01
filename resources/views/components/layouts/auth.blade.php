@@ -35,5 +35,30 @@
             Swal.fire(@json(session('swal')));
         </script>
     @endif --}}
+    <script>
+    function darkMode() {
+        return {
+            isDarkMode: false,
+            init() {
+                const storedTheme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                this.isDarkMode = storedTheme === 'dark' || (!storedTheme && prefersDark);
+                this.applyTheme();
+
+                Livewire.hook('message.processed', () => {
+                    this.applyTheme();
+                });
+            },
+            toggle() {
+                this.isDarkMode = !this.isDarkMode;
+                localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
+                this.applyTheme();
+            },
+            applyTheme() {
+                document.documentElement.classList.toggle('dark', this.isDarkMode);
+            }
+        }
+    }
+</script>
     </body>
 </html>

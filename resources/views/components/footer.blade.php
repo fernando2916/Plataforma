@@ -8,9 +8,9 @@
             <div>
               <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Menu</h3>
               <ul class="space-y-2 text-sm">
-                <li><a href="/blog" class="hover:text-link-100">Blog</a></li>
-                <li><a href="/tienda" class="hover:text-link-100">Tienda</a></li>
-                <li><a href="/cursos" class="hover:text-link-100">Cursos</a></li>
+                <li><a wire:navigate href="{{ route("blog.index") }}" class="hover:text-link-100">Blog</a></li>
+                <li><a wire:navigate href="{{ route("tienda.index") }}" class="hover:text-link-100">Tienda</a></li>
+                <li><a wire:navigate href="{{ route("cursos.index") }}" class="hover:text-link-100">Cursos</a></li>
               </ul>
             </div>
 
@@ -18,9 +18,9 @@
             <div class="mt-8 md:mt-0">
               <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Soporte</h3>
               <ul class="space-y-2 text-sm">
-                <li><a href="/contacto" class="hover:text-link-100">Contacto</a></li>
-                <li><a href="/envios" class="hover:text-link-100">Envíos</a></li>
-                <li><a href="/preguntas-freceuntes" class="hover:text-link-100">Preguntas Frecuentes</a></li>
+                <li><a wire:navigate href="{{ route("contacto.index") }}" class="hover:text-link-100">Contacto</a></li>
+                <li><a wire:navigate href="{{ route("envios.index") }}" class="hover:text-link-100">Envíos</a></li>
+                <li><a wire:navigate href="{{ route("frecuentes.index") }}"" class="hover:text-link-100">Preguntas Frecuentes</a></li>
               </ul>
             </div>
 
@@ -30,9 +30,9 @@
             <div>
               <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Empresa</h3>
               <ul class="space-y-2 text-sm">
-                <li><a href="/quienes-somos" class="hover:text-link-100">Quiénes Somos</a></li>
-                <li><a href="/recursos" class="hover:text-link-100">Recursos</a></li>
-                <li><a href="/vacantes" class="hover:text-link-100">Vacantes</a></li>
+                <li><a wire:navigate href="{{ route("nosotros.index") }}" class="hover:text-link-100">Quiénes Somos</a></li>
+                <li><a wire:navigate href="{{ route("recursos.index") }}" class="hover:text-link-100">Recursos</a></li>
+                <li><a wire:navigate href="{{ route("vacantes.index") }}" class="hover:text-link-100">Vacantes</a></li>
               </ul>
             </div>
 
@@ -40,9 +40,9 @@
             <div class="mt-8 md:mt-0">
               <h3 class="text-sm font-semibold mb-4 uppercase text-link-100">Legal</h3>
               <ul class="space-y-2 text-sm">
-                <li><a href="/facturacion" class="hover:text-link-100">Facturación</a></li>
-                <li><a href="/aviso-de-privacidad" class="hover:text-link-100">Aviso de Privacidad</a></li>
-                <li><a href="/terminos-y-condiciones" class="hover:text-link-100">Términos y Condiciones</a></li>
+                <li><a wire:navigate href="{{ route("facturacion.index") }}" class="hover:text-link-100">Facturación</a></li>
+                <li><a wire:navigate href="{{ route("aviso.index") }}" class="hover:text-link-100">Aviso de Privacidad</a></li>
+                <li><a wire:navigate href="{{ route("terminos.index") }}" class="hover:text-link-100">Términos y Condiciones</a></li>
               </ul>
             </div>
         </div>

@@ -15,23 +15,23 @@
   
     <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-slate-600 shadow-md rounded-lg mt-2 dark:bg-nav-800 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
       <div class="p-1 space-y-0.5">
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/diseño-grafico">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("diseno.index") }}">
           <i class="fa-solid fa-pen"></i>
           Diseño Gráfico
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/fotografia">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("fotografia.index") }}">
           <i class="fa-solid fa-camera"></i>
          Fotografía
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/diseno-y-desarrollo-web">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("desarrollo.index") }}">
           <i class="fa-solid fa-laptop-code"></i>
           Diseño y Desarrollo Web
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/impresion">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("impresion.index") }}">
           <i class="fa-solid fa-print"></i>
           Impresión
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/asesorias">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("asesorias.index") }}">
           <i class="fa-solid fa-chalkboard-user"></i>
           Asesorias
         </a>
@@ -45,7 +45,7 @@
     </a>
     </div>
     <div class="flex items center gap-2">
-      <a href="/blog" class="">
+      <a wire:navigate href="{{ route("blog.index") }}" class="">
         <i class="fa-solid fa-book"></i>
         Blog
       </a>
@@ -66,31 +66,31 @@
   
     <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-slate-600 shadow-md rounded-lg mt-2 dark:bg-nav-800 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
       <div class="p-1 space-y-0.5">
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/quienes-somos">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("nosotros.index") }}">
           <i class="fa-solid fa-circle-info"></i>
           Quienes somos
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/contacto">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("contacto.index") }}">
           <i class="fa-solid fa-envelopes-bulk"></i>
          Contacto
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/recursos">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("recursos.index") }}">
           <i class="fa-solid fa-download"></i>
           Recursos
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/glosario">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("glosario.index") }}">
           <i class="fa-brands fa-glide-g"></i>
           Glosario
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/vacantes">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("vacantes.index") }}">
           <i class="fa-solid fa-briefcase"></i>
           Vacantes
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/responsabilidad-social">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("social.index") }}">
           <i class="fa-solid fa-newspaper"></i>
           Responsabilidad Social
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/politica-ambiental">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("ambiental.index") }}">
           <i class="fa-solid fa-earth-americas"></i>
           Política Ambiental
         </a>

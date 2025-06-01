@@ -6,7 +6,6 @@
       <a
         href="{{ route('home') }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
         <i class="fa-solid fa-house"></i>
       Inicio
@@ -18,9 +17,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/blog"
+        wire:navigate href="{{ route("blog.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
         <i class="fa-solid fa-book"></i>
       Blog
@@ -32,9 +30,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/tienda"
+        wire:navigate href="{{ route("tienda.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
       <i class="fa-solid fa-cart-shopping"></i>
       Tienda
@@ -46,9 +43,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/cursos"
+        wire:navigate href="{{ route("cursos.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
         <i class="fa-solid fa-video"></i>
       Cursos
@@ -67,9 +63,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/diseño-grafico"
+        wire:navigate href="{{ route("diseno.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
         <i class="fa-solid fa-pen"></i>
       Diseño Gráfico
@@ -81,9 +76,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/fotografia"
+        wire:navigate href="{{ route("fotografia.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
         <i class="fa-solid fa-camera"></i>
       Fotografía
@@ -95,9 +89,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/diseño-y-desarrollo-web"
+        wire:navigate href="{{ route("desarrollo.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
       <i class="fa-solid fa-laptop-code"></i>
       Diseño y Desarrollo web
@@ -109,9 +102,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/impresion"
+        wire:navigate href="{{ route("impresion.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
       <i class="fa-solid fa-print"></i>
       Impresión
@@ -123,9 +115,8 @@
       @click="showMenu = false"
     >
       <a
-        href="/asesorias"
+        wire:navigate href="{{ route("asesorias.index") }}"
         class="flex items-center gap-3 p-3 text-lg"
-        wire:navigate
       >
       <i class="fa-solid fa-chalkboard-user"></i>
       Asesorias
@@ -144,9 +135,8 @@
     @click="showMenu = false"
   >
     <a
-      href="/quienes-somos"
+      wire:navigate href="{{ route("nosotros.index") }}"
       class="flex items-center gap-3 p-3 text-lg"
-      wire:navigate
     >
       <i class="fa-solid fa-circle-info"></i>
     Quienes somos
@@ -158,9 +148,8 @@
     @click="showMenu = false"
   >
     <a
-      href="/contacto"
+      wire:navigate href="{{ route("contacto.index") }}"
       class="flex items-center gap-3 p-3 text-lg"
-      wire:navigate
     >
     <i class="fa-solid fa-envelopes-bulk"></i>
    Contacto
@@ -172,9 +161,8 @@
     @click="showMenu = false"
   >
     <a
-      href="/recursos"
+      wire:navigate href="{{ route("contacto.index") }}"
       class="flex items-center gap-3 p-3 text-lg"
-      wire:navigate
     >
     <i class="fa-solid fa-download"></i>
     Recursos
@@ -186,9 +174,8 @@
     @click="showMenu = false"
   >
     <a
-      href="/glosario"
+      wire:navigate href="{{ route("glosario.index") }}"
       class="flex items-center gap-3 p-3 text-lg"
-      wire:navigate
     >
     <i class="fa-brands fa-glide-g"></i>
     Glosario Gráfico
@@ -199,9 +186,8 @@
     @click="showMenu = false"
   >
     <a
-      href="/responsabilidad-social"
+      wire:navigate href="{{ route("social.index") }}"
       class="flex items-center gap-3 p-3 text-lg"
-      wire:navigate
     >
     <i class="fa-solid fa-newspaper"></i>
     Responsabilidad Social
@@ -212,9 +198,8 @@
     @click="showMenu = false"
   >
     <a
-      href="/politica-ambiental"
+      wire:navigate href="{{ route("ambiental.index") }}"
       class="flex items-center gap-3 p-3 text-lg"
-      wire:navigate
     >
     <i class="fa-solid fa-earth-americas"></i>
     Politica Ambiental

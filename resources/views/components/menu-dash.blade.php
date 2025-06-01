@@ -1,57 +1,36 @@
 <ul class="p-3 border-b">
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a href="/" class="flex items-center gap-3 p-3 text-lg">
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="/" class="flex items-center gap-3 p-3 text-lg">
       <i class="fa-solid fa-home"></i>
       Inicio
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a href='/' class="flex items-center gap-3 p-3 text-lg">
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route('admin.index') }}" class="flex items-center gap-3 p-3 text-lg">
       <i class="fa-solid fa-user-shield"></i>
       Panel Administrativo
     </a>
   </li>
-  <li
-    @click="showMenu = false"
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-  >
-    <a href="/blog" class="flex items-center gap-3 p-3 text-xl">
+  <li @click="showMenu = false" class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all">
+    <a wire:navigate href="{{ route("blog.index") }}" class="flex items-center gap-3 p-3 text-xl">
       <i class="fa-solid fa-book"></i>
       Blog
     </a>
   </li>
-  <li
-    @click="showMenu = false"
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-  >
-    <a href="/tienda" class="flex items-center gap-3 p-3 text-xl">
+  <li @click="showMenu = false" class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all">
+    <a wire:navigate href="{{ route("tienda.index") }}" class="flex items-center gap-3 p-3 text-xl">
       <i class="fa-solid fa-shop"></i>
       Tienda
     </a>
   </li>
-  <li
-    @click="showMenu = false"
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-  >
-    <a href="/cursos" class="flex items-center gap-3 p-3 text-xl">
+  <li @click="showMenu = false" class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all">
+    <a wire:navigate href="{{ route("cursos.index") }}" class="flex items-center gap-3 p-3 text-xl">
       <i class="fa-solid fa-video"></i>
       Cursos
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="notificaciones"
-      class="flex items-center justify-between gap-3 p-3 text-lg"
-    >
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a href="notificaciones" class="flex items-center justify-between gap-3 p-3 text-lg">
       <div class="flex items-center gap-3">
         <i class="fa-solid fa-bell"></i>
         Notificaciones
@@ -62,140 +41,78 @@
       </div>
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/mi-cuenta/mis-cursos"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-laptop-code"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("cuenta.cursos.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-laptop-code"></i>
       Mi aprendizaje
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/mi-cuenta/mis-compras"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-bag-shopping"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("compras.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-bag-shopping"></i>
       Mis compras
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/mi-cuenta/mis-deseos"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-heart"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("deseos.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-heart"></i>
       Lista de deseos
     </a>
   </li>
 
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/facturacion"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-shield"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("facturacion.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-shield"></i>
       Facturación
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a href="/soporte" class="flex items-center gap-3 p-3 text-lg">
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("soporte.index") }}" class="flex items-center gap-3 p-3 text-lg">
       <i class="fa-solid fa-user-gear"></i>
       Soporte técnico
     </a>
   </li>
   <form method='post' action="{{ route('logout') }}">
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    @csrf
-    <button type='submit'
-      class="flex items-center gap-3 p-3 text-lg"
-      >
-      <i class="fa-solid fa-right-from-bracket"></i>
-      Salir
-    </button>
-  </li>
-</form>
+    <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+      @csrf
+      <button type='submit' class="flex items-center gap-3 p-3 text-lg">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Salir
+      </button>
+    </li>
+  </form>
 </ul>
 <ul class="p-3 border-b">
   <div class="flex items-center justify-start pl-7 text-a-500 font-semibold dark:text-slate-400 gap-3">
     <span class="">Nuestros Servicios</span>
   </div>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/diseno-grafico"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-pen"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("diseno.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-pen"></i>
       Diseño Gráfico
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/fotografia"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-camera"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("fotografia.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-camera"></i>
       Fotografía
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/diseno-y-desarrollo-web"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-laptop-code"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("desarrollo.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-laptop-code"></i>
       Diseño y Desarrollo Web
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/impresion"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-print"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("impresion.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-print"></i>
       Impresión
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/asesorias"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-chalkboard-user"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("asesorias.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-chalkboard-user"></i>
       Asesorias
     </a>
   </li>
@@ -204,98 +121,55 @@
   <div class="flex items-center justify-start pl-7 text-a-500 font-semibold dark:text-slate-400 gap-3">
     <span class="">Más de Emprendedores</span>
   </div>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/nosotros/sobre-nosotros"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-building"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("nosotros.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-building"></i>
       Quienes somos
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/contacto"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-envelopes-bulk"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("contacto.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-envelopes-bulk"></i>
       Contacto
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/recursos"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-download"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("recursos.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-download"></i>
       Recursos
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/bolsa-de-trabajo"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-brands fa-glide-g"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("glosario.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-brands fa-glide-g"></i>
       Glosario
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/vacantes"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-briefcase"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("vacantes.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-briefcase"></i>
       Vacantes
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/nosotros/responsabilidad-social"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-      <FaNewspaper />
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("social.index") }}" class="flex items-center gap-3 p-3 text-lg">
+      <i class="fa-solid fa-newspaper"></i>
       Responsabilidad Social
     </a>
   </li>
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a
-      href="/nosotros/politica-medioambiente"
-      class="flex items-center gap-3 p-3 text-lg"
-    >
-    <i class="fa-solid fa-newspaper"></i>
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="{{ route("ambiental.index") }}" class="flex items-center gap-3 p-3 text-lg">
+
+      <i class="fa-solid fa-earth-americas"></i>
+
       Política de medio ambiente
     </a>
   </li>
 </ul>
 <ul class="p-2">
-  <li
-    class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all"
-    @click="showMenu = false"
-  >
-    <a href="/" class="text-sm text-a-100 font-semibold">
-      Emprendedores Creativos &copy; 
+  <li class="hover:bg-slate-400 dark:hover:bg-nav-700 pl-3 rounded-lg transition-all" @click="showMenu = false">
+    <a wire:navigate href="/" class="text-sm text-a-100 font-semibold">
+      Emprendedores Creativos &copy;
     </a>
     <span class="text-sm font-semibold">
       {{ now()->year }} Todos los derechos reservados.

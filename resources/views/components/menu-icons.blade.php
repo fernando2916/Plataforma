@@ -13,11 +13,17 @@
       <div class="p-1 space-y-0.5">
         <div class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 ">
           <div class="">
-            <i class="fa-solid fa-user-circle mr-2"></i>
-            {{ auth()->user()->nombre_completo }}
+            <a wire:navigate href="{{ route("perfil.index") }}" class="flex items-center gap-x-3">
+
+              <i class="fa-solid fa-user-circle mr-2"></i>
+              <div class="">
+                {{ auth()->user()->nombre_completo }}
+                <p class="text-link-100">{{ auth()->user()->email }}</p>
+              </div>
+            </a>
           </div>
         </div>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/dashboard">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route('admin.index') }}">
           <i class="fa-solid fa-user-shield"></i>
          Panel administrativo
         </a>
@@ -25,19 +31,17 @@
           <i class="fa-solid fa-bell"></i>
           Notificaciones
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/mi-cuenta/mi-perfil">
-          <i class="fa-solid fa-user-circle"></i>
-          Mi perfil
-        </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/mi-cuenta/mis-cursos">
+       
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " 
+        wire:navigate href="{{ route("compras.index") }}">
           <i class="fa-solid fa-basket-shopping"></i>
           Mis compras
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/facturacion">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("facturacion.index") }}">
           <i class="fa-solid fa-file-export"></i>
           Facturación
         </a>
-        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " href="/mi-cuenta-soporte">
+        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm dark:text-white hover:bg-slate-400 focus:outline-hidden focus:bg-gray-100 text-slate-200 dark:hover:bg-nav-700 " wire:navigate href="{{ route("soporte.index") }}">
           <i class="fa-solid fa-gears"></i>
           Soporte
         </a>

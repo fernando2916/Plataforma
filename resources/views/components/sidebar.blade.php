@@ -39,7 +39,7 @@
                 @click="showMenu = false"
             >
                 <!-- Ícono Times -->
-                <i class="fa-solid fa-xmark text-lg p-1"></i>
+                <i class="fa-solid fa-xmark text-lg px-1.5"></i>
             </button>
 
             <!-- Contenido del sidebar -->
@@ -48,7 +48,7 @@
                     <div>
                         <span class="text-2xl">{{ Auth::user()->nombre_completo }}</span>
                         <div class="flex items-center gap-1">
-                            <a href="/" class="flex items-center gap-1" @click="showMenu = false">
+                            <a wire:navigate href="{{ route("perfil.index") }}" class="flex items-center gap-1" @click="showMenu = false">
                                 <span class="text-link-400 text-base">Mi Perfil</span>
                                 <svg class="w-4 h-4 text-link-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
