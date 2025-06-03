@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="mt-8 xl:mt-0">
-        <h3 class="text-sm font-bold text-link-100 tracking-wider uppercase text-link-100">
+        <h3 class="text-sm font-bold text-link-100 tracking-wider uppercase ">
           Suscríbete a Nuestro Boletín
         </h3>
         <p class="mt-4 text-sm dark:text-gray-300">

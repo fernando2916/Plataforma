@@ -16,8 +16,8 @@ Crear Cuenta |
                     class="text-sm font-medium mb-3 after:ml-0.5 after:text-red-500 after:content-['*']">Nombre
                     Completo</label>
                 <input id="name" name="nombre_completo" value="{{ old('nombre_completo') }}" type="text"
-                    placeholder="Nombre Completo" class="disabled:bg-nav-900 disabled:border-nav-900 focus:shadow-link-200 w-full rounded-md border-2 bg-transparent p-2 outline-none focus:shadow-md placeholder:text-slate-700 mt-2 @error('nombre_completo')
-               dark:border-alerts-500
+                    placeholder="Luis Gonzales" class="disabled:bg-nav-900 disabled:border-nav-900 focus:shadow-link-200 w-full rounded-md border-2 bg-transparent p-2 outline-none focus:shadow-md placeholder:text-slate-800 dark:placeholder:text-slate-500 mt-2 @error('nombre_completo')
+               dark:border-alerts-500 border-alerts-500
                @enderror">
                 @error('nombre_completo')
 
@@ -29,8 +29,8 @@ Crear Cuenta |
                     class="text-sm font-medium mb-3 after:ml-0.5 after:text-red-500 after:content-['*']">Nombre de
                     usuario</label>
                 <input id="username" name="username" value="{{ old('username') }}" type="text"
-                    placeholder="Nombre de usuario" class="disabled:bg-nav-900 disabled:border-nav-900 focus:shadow-link-200 w-full rounded-md border-2 bg-transparent p-2 outline-none focus:shadow-md placeholder:text-slate-700 mt-2 @error('username')
-               dark:border-alerts-500
+                    placeholder="Luis Gonz" class="disabled:bg-nav-900 disabled:border-nav-900 focus:shadow-link-200 w-full rounded-md border-2 bg-transparent p-2 outline-none focus:shadow-md placeholder:text-slate-800 dark:placeholder:text-slate-500 mt-2 @error('username')
+               dark:border-alerts-500 border-alerts-500
                @enderror">
                 @error('username')
 
@@ -43,8 +43,8 @@ Crear Cuenta |
                     class="text-sm font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']">Correo
                     Electrónico</label>
                 <input id="email" name="email" value="{{ old('email') }}" type="email" placeholder="example@correo.com"
-                    class="disabled:bg-nav-900 disabled:border-nav-900 focus:shadow-link-200 w-full rounded-md border-2 bg-transparent p-2 outline-none focus:shadow-md placeholder:text-slate-700 mt-2 @error('email')
-               dark:border-alerts-500
+                    class="disabled:bg-nav-900 disabled:border-nav-900 focus:shadow-link-200 w-full rounded-md border-2 bg-transparent p-2 outline-none focus:shadow-md placeholder:text-slate-800 dark:placeholder:text-slate-500 mt-2 @error('email')
+               dark:border-alerts-500 border-alerts-500
                @enderror">
                 @error('email')
 
@@ -55,7 +55,7 @@ Crear Cuenta |
             <div>
                 <label for="password"
                     class="text-sm font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']">Contraseña</label>
-                <x-password-input id="password" name="password" model="password" placehlder="Contraseña" />
+                <x-password-input id="password" name="password" model="password" placeholder="********" />
 
             </div>
             <div>
@@ -63,27 +63,32 @@ Crear Cuenta |
                     class="text-sm font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']">Confirma tu
                     contraseña</label>
                 <x-password-input id="password_confirmation" name="password_confirmation" model="password_confirmation"
-                    placehlder="Confirma tu contraseña" />
+                    placeholder="********" />
             </div>
-            <div className="flex items-start">
+            <div class="w-full py-2 text-[13px] sm:text-base flex flex-wrap items-center gap-1">
 
-                <p class="w-full py-1 text-start md:text-[.7rem]">
-                
-                 Al crear tú cuenta, indicas que leíste y aceptas los
-                
-                 <x-terminos-modal />
-                
-                
-                
-                 <span class="md:text-[.7rem]">y el</span>
-                
-                 <x-aviso-privacidad />
-                
-                 <span class="font-bold md:text-[.9rem]">de Emprendedores Creativos.</span>
-                
+                <p class="">
+
+                    Al crear tú cuenta, indicas que leíste y aceptas los
+                    <span>
+                        <x-terminos-modal />
+                    </span>
+
+                    <span class="text-[13px] sm:text-base inline-block items-center">
+                        y el
+                    </span>
+                    <span>
+                        <x-aviso-privacidad />
+                    </span>
+
+                    <span class="text-[13px] sm:text-base">
+                        de 
+                        <strong>Emprendedores Creativos.</strong>
+                    </span>
+
                 </p>
-                
-                </div>
+
+            </div>
             <button type="submit"
                 class="bg-btn-200 hover:bg-btn-400 dark:bg-btn-400 text-white dark:hover:bg-btn-600 duration-300 transition-colors rounded-md px-3 py-2 w-full cursor-pointer flex items-center justify-center gap-2">
                 <i class="fa-solid fa-right-to-bracket"></i>

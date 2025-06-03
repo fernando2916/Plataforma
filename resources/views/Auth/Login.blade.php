@@ -37,7 +37,7 @@ Ingresar |
               id="password" 
               name="password" 
               model="password" 
-              placehlder="Contraseña" 
+              placehlder="********" 
           />
 
       </div>

@@ -14,7 +14,7 @@ Restablecer Contraseña |
           <div>
             <label for="password"
                 class="text-sm font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']">Contraseña</label>
-            <x-password-input id="password" name="password" model="password" placehlder="Contraseña" />
+            <x-password-input id="password" name="password" model="password" placehlder="********" />
 
         </div>
         <div>
@@ -22,7 +22,7 @@ Restablecer Contraseña |
                 class="text-sm font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']">Confirma tu
                 contraseña</label>
             <x-password-input id="password_confirmation" name="password_confirmation" model="password_confirmation"
-                placehlder="Confirma tu contraseña" />
+                placehlder="********" />
         </div>
         <button type="submit"
                 class="bg-btn-200 hover:bg-btn-400 dark:bg-btn-400 text-white dark:hover:bg-btn-600 duration-300 transition-colors rounded-md px-3 py-2 w-full cursor-pointer flex items-center justify-center gap-2">
