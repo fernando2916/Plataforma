@@ -11,4 +11,8 @@ class AvisoController extends Controller
     {
         return view('plataforma.aviso.index');
     }
+    public function resumen()
+    {
+        return view('plataforma.resumen.index');
+    }
 }

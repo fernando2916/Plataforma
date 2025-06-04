@@ -24,8 +24,7 @@
         <div>
           <p class=" text-justify text-sm md:text-base pt-2">
             <strong>Emprendedores Creativos</strong> es una compañía de tecnología que ofrece
-            servicios vinculados principalmente al comercio electrónico y a
-            los pagos digitales.
+            servicios vinculados principalmente a las distintas áreas del diseño gráfico y al comercio electrónico.
           </p>
           <div class="my-3">
             <ul class="space-y-5">
